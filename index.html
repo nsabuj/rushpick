@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RushPick – User guide</title>
+<meta name="description" content="How to use RushPick: scan order receipts, pick from one combined list and mark orders ready.">
+<style>
+:root{
+  --brand:#d9622b; --brand-ink:#ffffff; --bg:#f3f5f8; --card:#ffffff; --ink:#1b1f24; --muted:#5d6672;
+  --line:#e2e6eb; --soft:#fdeee5; --warn-bg:#fff6e5; --warn-line:#f0d49a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --brand:#ef7a3f; --bg:#101317; --card:#1a1f25; --ink:#e8ebef; --muted:#9aa4b0;
+    --line:#2b323a; --soft:#2e1d14; --warn-bg:#2b2416; --warn-line:#5c4a22; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--brand)}
+header{background:var(--brand);color:var(--brand-ink);padding:28px 16px 64px}
+.wrap{max-width:760px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.home{color:var(--brand-ink);text-decoration:none;font-size:14px;opacity:.9}
+h1{font-size:30px;line-height:1.2;margin:22px 0 8px}
+header p{margin:0;opacity:.92;max-width:600px}
+main{padding:0 16px 48px;margin-top:-40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:0 0 16px}
+.card h2{font-size:20px;margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
+.num{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--brand);font-size:14px;font-weight:700}
+.card h3{font-size:16px;margin:16px 0 4px}
+.card p{margin:0 0 10px}
+ul,ol{margin:0 0 10px;padding-inline-start:22px}
+li{margin:4px 0}
+.quick{background:var(--soft);border-color:transparent}
+.quick ol{font-weight:600}
+.tip{border-inline-start:3px solid var(--brand);padding:6px 12px;background:var(--soft);border-radius:0 8px 8px 0;margin:10px 0 0}
+.warn{background:var(--warn-bg);border-color:var(--warn-line)}
+dl{margin:0}
+dt{font-weight:700;margin-top:12px}
+dd{margin:2px 0 0}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+nav.toc a{font-size:14px;text-decoration:none;background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px;color:var(--ink)}
+footer{color:var(--muted);font-size:14px;text-align:center;padding:8px 16px 40px}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600;margin:6px 8px 0 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <a class="home" href="../">← Green Pixel Studio</a>
+    </div>
+    <h1>How to use RushPick</h1>
+    <p>RushPick turns your order receipts into one picking list, so you collect every item once and pack orders without mistakes. It works offline, with no account.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="card quick"><h2>Quick start</h2>
+    <ol><li>Scan or import an order receipt.</li><li>Check the order and save it.</li><li>Pick from the combined list.</li><li>Mark each order ready when it's packed.</li></ol>
+  </div>
+  <nav class="toc">
+    <a href="#scan">Scan receipts</a><a href="#check">Check orders</a><a href="#pick">Pick</a><a href="#ready">Mark ready</a><a href="#allergies">Allergies</a><a href="#catalog">Product names</a><a href="#backup">Backup</a><a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="card" id="scan"><h2><span class="num">1</span>Scan or import a receipt</h2>
+    <p>Scan an order receipt with your camera or import a photo of one. RushPick reads the order number, customer and items right on your phone.</p>
+    <ul>
+      <li>Totals, tax, payment and thank-you lines are ignored automatically.</li>
+      <li>The same receipt can't be added twice.</li>
+      <li>Receipt reading works with Latin-alphabet receipts.</li>
+    </ul>
+    <p class="tip">For the best results, lay the receipt flat in good light and keep the whole item list in the frame.</p>
+  </div>
+
+  <div class="card" id="check"><h2><span class="num">2</span>Check the order and save</h2>
+    <p>Before saving, look over the order and fix anything the scanner misread. When you save, the order goes straight into your open batch.</p>
+  </div>
+
+  <div class="card" id="pick"><h2><span class="num">3</span>Pick from one combined list</h2>
+    <p>Identical items from all orders in the batch are added up, with how many orders need each one. Collect each item once for the whole batch.</p>
+    <ul>
+      <li>Sort the list by aisle or by name.</li>
+      <li>Tap once to mark a line as collected.</li>
+      <li>Enter partial amounts and weights (kg, g, L) with +/- or by typing the amount.</li>
+      <li>Report a shortage without changing the customer's order.</li>
+      <li>Open any order on its own to see what's been collected for it so far.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="ready"><h2><span class="num">4</span>Mark orders ready</h2>
+    <p>Mark each order ready when it's packed. Ready and cancelled orders leave the batch, and their items come off the picking list.</p>
+  </div>
+
+  <div class="card" id="allergies"><h2><span class="num">5</span>Allergies and preparation notes</h2>
+    <p>Allergy notes (nuts, gluten, dairy and more) are highlighted and never merged away. For restaurants and takeaways, items with preparation notes like "no onion" stay separate on the list, so they're prepared correctly.</p>
+  </div>
+
+  <div class="card" id="catalog"><h2><span class="num">6</span>Teach RushPick your product names</h2>
+    <p>Match a receipt line to a product in your catalog once, and RushPick recognises it next time. The more you use it, the less you need to correct.</p>
+  </div>
+
+  <div class="card" id="backup"><h2><span class="num">7</span>Back up your data</h2>
+    <p>All orders, products and receipt images stay on your device. Export a backup of your data at any time, so you don't lose it if you change phones.</p>
+  </div>
+
+  <div class="card" id="faq"><h2><span class="num">8</span>FAQ</h2>
+    <dl>
+      <dt>Are receipt photos uploaded?</dt>
+      <dd>No. Text recognition runs on your device, and receipt photos are not uploaded.</dd>
+      <dt>Do I need an account or internet?</dt>
+      <dd>No. There's no sign-up, no login and no subscription, and RushPick works offline.</dd>
+      <dt>Why do I see ads?</dt>
+      <dd>RushPick is free and supported by ads. In the EU, UK and Switzerland, ads are shown only after you give consent, and you can change your choice in Settings.</dd>
+      <dt>Which languages does it support?</dt>
+      <dd>English, Português, Español, Français, العربية, বাংলা, हिन्दी and 中文.</dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.rushpick.app">Get it on Google Play</a>
+    <p style="margin-top:12px">Questions? Email <a href="mailto:nur.uudevs@gmail.com">nur.uudevs@gmail.com</a>. Read the <a href="privacy-policy.html">privacy policy</a>.</p>
+  </div>
+</main>
+<footer>© 2026 Green Pixel Studio</footer>
+</body>
+</html>
